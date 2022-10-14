@@ -1,0 +1,21 @@
+Description: replace ava by tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-12-09
+
+--- a/test.js
++++ b/test.js
+@@ -1,5 +1,5 @@
+-import test from 'ava';
+-import isPlainObject from '.';
++const test = require('tape');
++const isPlainObject = require('.');
+ 
+ function Foo(x) {
+ 	this.x = x;
+@@ -37,4 +37,5 @@
+ 	const foo = new Foo();
+ 	foo.constructor = Object;
+ 	t.false(isPlainObject(foo));
++	t.end();
+ });

@@ -1,0 +1,41 @@
+node-is-plain-obj (3.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix uscan
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 25 Sep 2021 14:29:52 +0000
+
+node-is-plain-obj (3.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Apply multi-arch hints.
+    + node-is-plain-obj: Add Multi-Arch: foreign.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs auto install
+  * Fix copyright
+  * New upstream version 3.0.0 (adds typescript definitions)
+  * Enable upstream test using tape instead of ava
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 09 Dec 2020 12:27:37 +0100
+
+node-is-plain-obj (1.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #852971)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 16 Oct 2017 14:49:39 +0530
